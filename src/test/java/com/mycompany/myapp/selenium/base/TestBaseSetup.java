@@ -84,9 +84,6 @@ public class TestBaseSetup {
 
     // This method opens the full url based on the partial URL string that is passed in:
     public void openUrl(WebDriver driver, String partialurl) {
-        log.error("prefix: " + getPrefix());
-        log.error("partialurl: " + partialurl);
-        log.error("driver.toString()" + driver.toString());
         driver.get(getPrefix() + partialurl);
     }
 
